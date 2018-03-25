@@ -2,15 +2,49 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/holo_green_light">
 
-    <TextView
-        android:id="@+id/fdgef"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="This is a LIVE NEWSFEED!"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        />
+<!--
+    https://code.tutsplus.com/tutorials/getting-started-with-recyclerview-and-cardview-on-android&#45;&#45;cms-23465
+-->
+<!--
+    http://ivankocijan.xyz/android-nestedscrollview/
+-->
+
+    <!--<android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/fdgef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is a LIVE NEWSFEED!"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
 
 </RelativeLayout>

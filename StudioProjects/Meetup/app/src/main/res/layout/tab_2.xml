@@ -4,13 +4,15 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light">
 
-    <TextView
-        android:id="@+id/gfhfhr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="You can EXPLORE NEW THINGS HERE!!!"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
 
 </RelativeLayout>
