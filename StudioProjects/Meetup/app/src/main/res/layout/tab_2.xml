@@ -4,12 +4,49 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light">
 
+    <TextView
+        android:id="@+id/Popular_Now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popular_now"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        />
+
     <LinearLayout
+        android:id="@+id/rv_popular_now_container"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Popular_Now"
+        android:layout_marginTop="20dp">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv2"
+            android:id="@+id/rv_popular_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Recently_Added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recently_added"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/rv_popular_now_container"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Recently_Added"
+        android:layout_marginTop="20dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recently_added"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />

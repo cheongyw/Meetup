@@ -1,0 +1,7 @@
+<application>
+  <component name="FindRecents">
+    <replaceStrings>
+      <replace>rv_browse</replace>
+    </replaceStrings>
+  </component>
+</application>
