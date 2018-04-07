@@ -150,6 +150,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case 2:
                     fragment = new Tab_3_Fragment();
+                    break;
+                case 3:
+                    fragment = new Tab_4_Fragment();
+                    break;
+                case 4:
+                    fragment = new Tab_5_Fragment();
             }
 
             return fragment;
@@ -157,18 +163,22 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 5 total pages.
+            return 5;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "News Feed";
+                    return "Home";
                 case 1:
                     return "Browse";
                 case 2:
+                    return "Search";
+                case 3:
+                    return "Plus";
+                case 4:
                     return "My Profile";
             }
             return null;

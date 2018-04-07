@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Meetup China</string>
+    <string name="app_name">le猫</string>
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
@@ -25,5 +25,11 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="popular_now">Popular Now</string>
     <string name="recently_added">Recently Added</string>
+    <string name="newsfeed">Newsfeed</string>
+    <string name="search">Search</string>
+    <string name="categories">Categories</string>
+    <string name="create_new_event">Create New Event</string>
+    <string name="continue_draft">Continue Draft</string>
+
 
 </resources>

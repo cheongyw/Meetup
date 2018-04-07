@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/holo_red_light">
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/test_icon"
+        />
+
+    <TextView
+        android:id="@+id/name_fixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_fixed"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/profile_pic"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/my_groups_fixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_groups_fixed"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/name_fixed"
+        android:layout_toRightOf="@id/profile_pic"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/gender_fixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender_fixed"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/my_groups_fixed"
+        android:layout_toRightOf="@id/profile_pic"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/name"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/name_fixed"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:id="@+id/my_groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_groups"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/my_groups_fixed"
+        android:layout_alignLeft="@id/name"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:layout_below="@id/my_groups"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/gender_fixed"
+        android:layout_alignLeft="@id/name"
+        />
+
+    <Button
+        android:id="@+id/email_sign_in_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_pic"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/action_sign_in_short"
+        android:textStyle="bold"
+        />
+
+    <!--
+        Scroll View:
+        https://github.com/karthikraj-duraisamy/ScrollingBehaviorAndroid/blob/master/app/src/main/res/layout/activity_appbar_withtabs_scrolling.xml
+    -->
+
+</RelativeLayout>
+
