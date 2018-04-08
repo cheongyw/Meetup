@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/holo_red_light">
+    android:background="@android:color/holo_blue_light">
 
     <ImageView
         android:id="@+id/profile_pic"
@@ -100,6 +100,26 @@
         Scroll View:
         https://github.com/karthikraj-duraisamy/ScrollingBehaviorAndroid/blob/master/app/src/main/res/layout/activity_appbar_withtabs_scrolling.xml
     -->
+
+    <TextView
+        android:id="@+id/calendar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calendar"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/email_sign_in_button"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/calendar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/calendar_text"
+        android:src="@drawable/calendar" />
 
 </RelativeLayout>
 

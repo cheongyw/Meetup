@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/holo_green_light">
+    android:background="@android:color/holo_blue_light">
 
 <!--
     https://code.tutsplus.com/tutorials/getting-started-with-recyclerview-and-cardview-on-android&#45;&#45;cms-23465
@@ -45,14 +45,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@android:color/holo_green_light"
+            android:background="@android:color/holo_blue_light"
             android:padding="16dp">
 
             <TextView
                 android:id="@+id/upcoming_events"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Upcoming Events"
+                android:text="@string/upcoming_events"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:textAlignment="center"
@@ -78,7 +78,7 @@
                 android:id="@+id/suggested_events"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Suggested Events"
+                android:text="@string/suggested_events"
                 android:layout_below="@id/rv_upcoming_events_container"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
@@ -124,6 +124,7 @@
                     android:id="@+id/rv_newsfeed"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_light"
                     />
 
             </LinearLayout>

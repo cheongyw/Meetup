@@ -171,15 +171,15 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Home";
+                    return "首页";
                 case 1:
-                    return "Browse";
+                    return "浏览";
                 case 2:
-                    return "Search";
+                    return "搜索";
                 case 3:
-                    return "Plus";
+                    return "+";
                 case 4:
-                    return "My Profile";
+                    return "我的";
             }
             return null;
         }

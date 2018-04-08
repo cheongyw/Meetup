@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
 
     <Button
         android:id="@+id/create_new_event"
@@ -10,8 +11,50 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/create_new_event"
+        android:text="@string/continue_draft"
         android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/empty_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/create_new_event"
+        android:src="@drawable/empty_thumbnail" />
+
+    <TextView
+        android:id="@+id/new_event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_event_name"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/empty_image"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/new_event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_event_date"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/new_event_name"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/new_event_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_event_description"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/new_event_date"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -19,10 +62,10 @@
         style="?android:textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/create_new_event"
+        android:layout_below="@id/new_event_description"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/continue_draft"
+        android:text="@string/create_new_event"
         android:textStyle="bold"
         />
 

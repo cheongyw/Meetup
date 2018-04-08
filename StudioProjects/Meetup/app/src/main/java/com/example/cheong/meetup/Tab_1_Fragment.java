@@ -29,9 +29,9 @@ public class Tab_1_Fragment extends android.support.v4.app.Fragment {
         //RV for Upcoming Events
 
         ArrayList<Event> upcoming_events = new ArrayList<>();
-        upcoming_events.add(new Event("Event 1", "today", R.drawable.test_thumbnail));
-        upcoming_events.add(new Event("Event 2", "today", R.drawable.test_thumbnail));
-        upcoming_events.add(new Event("Event 3", "tomorrow", R.drawable.test_thumbnail));
+        upcoming_events.add(new Event("项目一", "今天", R.drawable.test_thumbnail));
+        upcoming_events.add(new Event("项目二", "今天", R.drawable.test_thumbnail));
+        upcoming_events.add(new Event("项目三", "明天", R.drawable.test_thumbnail));
 
         RecyclerView rv_upcoming_events = (RecyclerView)view.findViewById(R.id.rv_upcoming_events);
         LinearLayoutManager llm_upcoming_events = new LinearLayoutManager(this.getActivity(), LinearLayoutManager.HORIZONTAL, false);
@@ -40,17 +40,17 @@ public class Tab_1_Fragment extends android.support.v4.app.Fragment {
         RVAdapter adapter_upcoming_events = new RVAdapter(upcoming_events, getContext());
         rv_upcoming_events.setAdapter(adapter_upcoming_events);
 
-        upcoming_events.add(new Event("Event 4", "Tomorrow", R.drawable.test_thumbnail));
-        upcoming_events.add(new Event("Event 5", "Tomorrow", R.drawable.test_thumbnail));
-        upcoming_events.add(new Event("Event 6", "Tomorrow", R.drawable.test_thumbnail));
+        upcoming_events.add(new Event("项目四", "明天", R.drawable.test_thumbnail));
+        upcoming_events.add(new Event("项目五", "明天", R.drawable.test_thumbnail));
+        upcoming_events.add(new Event("项目六", "后天", R.drawable.test_thumbnail));
         adapter_upcoming_events.notifyDataSetChanged();
 
         //RV for Suggested Events
 
         ArrayList<Event> suggested_events = new ArrayList<>();
-        suggested_events.add(new Event("Event 1", "today", R.drawable.test_thumbnail));
-        suggested_events.add(new Event("Event 2", "today", R.drawable.test_thumbnail));
-        suggested_events.add(new Event("Event 3", "tomorrow", R.drawable.test_thumbnail));
+        suggested_events.add(new Event("项目一", "今天", R.drawable.test_thumbnail));
+        suggested_events.add(new Event("项目二", "今天", R.drawable.test_thumbnail));
+        suggested_events.add(new Event("项目三", "明天", R.drawable.test_thumbnail));
 
         RecyclerView rv_suggested_events = (RecyclerView)view.findViewById(R.id.rv_suggested_events);
         LinearLayoutManager llm_suggested_events = new LinearLayoutManager(this.getActivity(), LinearLayoutManager.HORIZONTAL, false);
@@ -59,17 +59,17 @@ public class Tab_1_Fragment extends android.support.v4.app.Fragment {
         RVAdapter adapter_suggested_events = new RVAdapter(suggested_events, getContext());
         rv_suggested_events.setAdapter(adapter_suggested_events);
 
-        suggested_events.add(new Event("Event 4", "Tomorrow", R.drawable.test_thumbnail));
-        suggested_events.add(new Event("Event 5", "Tomorrow", R.drawable.test_thumbnail));
-        suggested_events.add(new Event("Event 6", "Tomorrow", R.drawable.test_thumbnail));
+        suggested_events.add(new Event("项目四", "明天", R.drawable.test_thumbnail));
+        suggested_events.add(new Event("项目五", "后天", R.drawable.test_thumbnail));
+        suggested_events.add(new Event("项目六", "后天", R.drawable.test_thumbnail));
         adapter_suggested_events.notifyDataSetChanged();
 
         // RV for Newsfeed
 
         ArrayList<News> newsfeed = new ArrayList<>();
-        newsfeed.add(new News("News 1", "description", R.drawable.test_thumbnail));
-        newsfeed.add(new News("News 2", "description", R.drawable.test_thumbnail));
-        newsfeed.add(new News("News 3", "description", R.drawable.test_thumbnail));
+        newsfeed.add(new News("新闻一", "内容描述", R.drawable.test_thumbnail));
+        newsfeed.add(new News("新闻二", "内容描述", R.drawable.test_thumbnail));
+        newsfeed.add(new News("新闻三", "内容描述", R.drawable.test_thumbnail));
 /*
         https://iteritory.com/android-recyclerview-horizontal-list-tutorial/
 */
@@ -81,11 +81,11 @@ public class Tab_1_Fragment extends android.support.v4.app.Fragment {
         RVAdapterNews adapter_newsfeed = new RVAdapterNews(newsfeed, getContext());
         rv_newsfeed.setAdapter(adapter_newsfeed);
 
-        newsfeed.add(new News("News 4", "description", R.drawable.test_thumbnail));
-        newsfeed.add(new News("News 5", "description", R.drawable.test_thumbnail));
-        newsfeed.add(new News("News 6", "description", R.drawable.test_thumbnail));
-        newsfeed.add(new News("News 7", "description", R.drawable.test_thumbnail));
-        newsfeed.add(new News("News 8", "description", R.drawable.test_thumbnail));
+        newsfeed.add(new News("新闻四", "内容描述", R.drawable.test_thumbnail));
+        newsfeed.add(new News("新闻五", "内容描述", R.drawable.test_thumbnail));
+        newsfeed.add(new News("新闻六", "内容描述", R.drawable.test_thumbnail));
+        newsfeed.add(new News("新闻七", "内容描述", R.drawable.test_thumbnail));
+        newsfeed.add(new News("新闻八", "内容描述", R.drawable.test_thumbnail));
         adapter_newsfeed.notifyDataSetChanged();
 
         return view;

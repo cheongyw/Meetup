@@ -2,7 +2,8 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
 
     <ImageView
         android:id="@+id/search"
@@ -21,6 +22,138 @@
         android:layout_below="@id/search"
         android:textStyle="bold"
         android:textAlignment="center"
+        />
+
+<!--
+    icons were snipped from meetup, resized ratio 40, then resized again ratio 60.
+-->
+
+    <ImageView
+        android:id="@+id/movies_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="27dp"
+        android:layout_below="@id/categories"
+        android:src="@drawable/movies" />
+
+    <ImageView
+        android:id="@+id/education_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/movies_icon"
+        android:layout_below="@id/categories"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/education" />
+
+    <ImageView
+        android:id="@+id/music_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/education_icon"
+        android:layout_below="@id/categories"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/music" />
+
+    <TextView
+        android:id="@+id/movies_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movies"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/movies_icon"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        />
+
+    <TextView
+        android:id="@+id/education_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/education"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/education_icon"
+        android:layout_toRightOf="@id/movies_text"
+        android:textStyle="bold"
+        android:layout_marginLeft="83dp"
+        />
+
+    <TextView
+        android:id="@+id/music_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/music_icon"
+        android:layout_toRightOf="@id/education_text"
+        android:textStyle="bold"
+        android:layout_marginLeft="83dp"
+        />
+
+    <ImageView
+        android:id="@+id/photography_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="27dp"
+        android:layout_below="@id/movies_text"
+        android:src="@drawable/photography" />
+
+    <ImageView
+        android:id="@+id/food_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/photography_icon"
+        android:layout_below="@id/education_text"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/food" />
+
+    <ImageView
+        android:id="@+id/sports_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/food_icon"
+        android:layout_below="@id/music_text"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sports" />
+
+    <TextView
+        android:id="@+id/photography_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photography"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/photography_icon"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        />
+
+    <TextView
+        android:id="@+id/food_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/food_icon"
+        android:layout_toRightOf="@id/photography_text"
+        android:textStyle="bold"
+        android:layout_marginLeft="83dp"
+        />
+
+    <TextView
+        android:id="@+id/sports_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sports"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/sports_icon"
+        android:layout_toRightOf="@id/food_text"
+        android:textStyle="bold"
+        android:layout_marginLeft="83dp"
         />
 
 </RelativeLayout>

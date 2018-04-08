@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">le猫</string>
-    <string name="title_activity_login">Sign in</string>
+    <string name="app_name">le猫!</string>
+    <string name="title_activity_login">登陆/注册</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
     <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in_short">登陆/注册</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
@@ -15,21 +15,36 @@
         completions."
     </string>
 
-    <string name="name_fixed">"Name: "</string>
-    <string name="my_groups_fixed">"Your groups: "</string>
-    <string name="gender_fixed">"Gender: "</string>
-    <string name="name">"PKU student"</string>
-    <string name="my_groups">"Badminton"</string>
-    <string name="gender">"Other"</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="popular_now">Popular Now</string>
-    <string name="recently_added">Recently Added</string>
-    <string name="newsfeed">Newsfeed</string>
-    <string name="search">Search</string>
-    <string name="categories">Categories</string>
-    <string name="create_new_event">Create New Event</string>
-    <string name="continue_draft">Continue Draft</string>
+    <string name="action_settings">设置</string>
 
+    <string name="upcoming_events">我参加的项目</string>
+    <string name="suggested_events">给我推荐的项目</string>
+    <string name="newsfeed">我的新闻</string>
+
+    <string name="popular_now">热门项目</string>
+    <string name="recently_added">最近加入</string>
+
+    <string name="search">搜索</string>
+    <string name="categories">分类</string>
+    <string name="movies">戏剧</string>
+    <string name="education">教学</string>
+    <string name="music">音乐</string>
+    <string name="photography">拍摄</string>
+    <string name="food">饮食</string>
+    <string name="sports">运动</string>
+
+    <string name="create_new_event">创建新项目</string>
+    <string name="new_event_name">项目名称：__________________</string>
+    <string name="new_event_date">项目时间：__________________</string>
+    <string name="new_event_description">项目描述：__________________</string>
+    <string name="continue_draft">继续创建</string>
+
+    <string name="name_fixed">"姓名: "</string>
+    <string name="my_groups_fixed">"我的小群: "</string>
+    <string name="gender_fixed">"性别: "</string>
+    <string name="name">"北大交换生"</string>
+    <string name="my_groups">"羽球小队"</string>
+    <string name="gender">"其他"</string>
+    <string name="calendar">"我的日历"</string>
 
 </resources>
