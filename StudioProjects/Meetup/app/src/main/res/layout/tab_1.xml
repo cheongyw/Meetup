@@ -3,14 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/holo_blue_light">
+    >
 
-<!--
-    https://code.tutsplus.com/tutorials/getting-started-with-recyclerview-and-cardview-on-android&#45;&#45;cms-23465
--->
-<!--
-    http://ivankocijan.xyz/android-nestedscrollview/
--->
+    <!--
+        https://code.tutsplus.com/tutorials/getting-started-with-recyclerview-and-cardview-on-android&#45;&#45;cms-23465
+    -->
+    <!--
+        http://ivankocijan.xyz/android-nestedscrollview/
+    -->
 
     <!--<android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -39,14 +39,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@android:color/holo_blue_light"
-            android:padding="16dp">
+            >
 
             <TextView
                 android:id="@+id/upcoming_events"
@@ -55,76 +55,56 @@
                 android:text="@string/upcoming_events"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
-                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
                 />
 
             <LinearLayout
                 android:id="@+id/rv_upcoming_events_container"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/upcoming_events"
-                android:background="@null"
+                android:background="#f4f4f4"
                 android:layout_marginTop="20dp">
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rv_upcoming_events"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@null"
                     />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/suggested_events"
+            <View
+                android:id="@+id/divider"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/suggested_events"
+                android:layout_height="2dp"
                 android:layout_below="@id/rv_upcoming_events_container"
                 android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:textAlignment="center"
-                />
-
-            <LinearLayout
-                android:id="@+id/rv_suggested_events_container"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/suggested_events"
-                android:background="@null"
-                android:layout_marginTop="20dp">
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_suggested_events"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    />
-            </LinearLayout>
+                android:background="@android:color/black"/>
 
             <TextView
                 android:id="@+id/newsfeed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/newsfeed"
-                android:layout_below="@id/rv_suggested_events_container"
+                android:layout_below="@id/divider"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
-                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
                 />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="480dp"
+                android:layout_height="500dp"
                 android:layout_below="@id/newsfeed"
                 android:layout_marginTop="20dp"
-                android:orientation="vertical">
+                android:background="#f4f4f4"
+                android:orientation="vertical"
                 >
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/rv_newsfeed"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/holo_blue_light"
                     />
 
             </LinearLayout>
@@ -133,15 +113,15 @@
 
     </ScrollView>
 
-   <!-- <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+    <!-- <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-    </LinearLayout>-->
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/rv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             />
+     </LinearLayout>-->
 
 </RelativeLayout>

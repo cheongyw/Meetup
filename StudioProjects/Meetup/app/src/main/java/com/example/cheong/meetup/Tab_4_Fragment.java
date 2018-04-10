@@ -20,28 +20,6 @@ public class Tab_4_Fragment extends android.support.v4.app.Fragment {
 
         View view = inflater.inflate(R.layout.tab_4, container, false);
 
-        Button create = (Button) view.findViewById(R.id.create_new_event);
-        create.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(getActivity(),LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        Button cont = (Button) view.findViewById(R.id.continue_draft);
-        cont.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent(getActivity(),LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
         return view;
     }
 

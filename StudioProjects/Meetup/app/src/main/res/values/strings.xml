@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">le猫!</string>
+    <string name="app_name">Le猫</string>
     <string name="title_activity_login">登陆/注册</string>
 
     <!-- Strings related to login -->

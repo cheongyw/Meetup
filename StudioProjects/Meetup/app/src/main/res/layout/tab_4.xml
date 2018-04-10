@@ -1,72 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/create_new_event"
-        style="?android:textAppearanceSmall"
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/search" />
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/categories"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/search"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <!--
+        icons were snipped from meetup, resized ratio 40, then resized again ratio 60.
+    -->
+
+    <ImageView
+        android:id="@+id/movies_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/continue_draft"
+        android:layout_marginLeft="27dp"
+        android:layout_below="@id/categories"
+        android:src="@drawable/movies" />
+
+    <ImageView
+        android:id="@+id/education_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/movies_icon"
+        android:layout_below="@id/categories"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/education" />
+
+    <ImageView
+        android:id="@+id/music_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/education_icon"
+        android:layout_below="@id/categories"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/music" />
+
+    <TextView
+        android:id="@+id/movies_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movies"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/movies_icon"
         android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        />
+
+    <TextView
+        android:id="@+id/education_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/education"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/education_icon"
+        android:layout_toRightOf="@id/movies_text"
+        android:textStyle="bold"
+        android:layout_marginLeft="83dp"
+        />
+
+    <TextView
+        android:id="@+id/music_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/music_icon"
+        android:layout_toRightOf="@id/education_text"
+        android:textStyle="bold"
+        android:layout_marginLeft="83dp"
         />
 
     <ImageView
-        android:id="@+id/empty_image"
+        android:id="@+id/photography_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/create_new_event"
-        android:src="@drawable/empty_thumbnail" />
+        android:layout_marginLeft="27dp"
+        android:layout_below="@id/movies_text"
+        android:src="@drawable/photography" />
+
+    <ImageView
+        android:id="@+id/food_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/photography_icon"
+        android:layout_below="@id/education_text"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/food" />
+
+    <ImageView
+        android:id="@+id/sports_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/food_icon"
+        android:layout_below="@id/music_text"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sports" />
 
     <TextView
-        android:id="@+id/new_event_name"
+        android:id="@+id/photography_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_event_name"
+        android:text="@string/photography"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/empty_image"
+        android:layout_below="@id/photography_icon"
         android:textStyle="bold"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
         />
 
     <TextView
-        android:id="@+id/new_event_date"
+        android:id="@+id/food_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_event_date"
+        android:text="@string/food"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/new_event_name"
+        android:layout_below="@id/food_icon"
+        android:layout_toRightOf="@id/photography_text"
         android:textStyle="bold"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="83dp"
         />
 
     <TextView
-        android:id="@+id/new_event_description"
+        android:id="@+id/sports_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_event_description"
+        android:text="@string/sports"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/new_event_date"
+        android:layout_below="@id/sports_icon"
+        android:layout_toRightOf="@id/food_text"
         android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        />
-
-    <Button
-        android:id="@+id/continue_draft"
-        style="?android:textAppearanceSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/new_event_description"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/create_new_event"
-        android:textStyle="bold"
+        android:layout_marginLeft="83dp"
         />
 
 </RelativeLayout>
+

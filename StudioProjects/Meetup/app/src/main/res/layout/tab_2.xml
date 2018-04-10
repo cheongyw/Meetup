@@ -1,55 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/Popular_Now"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/popular_now"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"
-        />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <LinearLayout
-        android:id="@+id/rv_popular_now_container"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/Popular_Now"
-        android:layout_marginTop="20dp">
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_popular_now"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
-    </LinearLayout>
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/Recently_Added"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/recently_added"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/rv_popular_now_container"
-        />
+            <TextView
+                android:id="@+id/Popular_Now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/popular_now"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/Recently_Added"
-        android:layout_marginTop="20dp">
+            <LinearLayout
+                android:id="@+id/rv_popular_now_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Popular_Now"
+                android:background="#f4f4f4"
+                android:layout_marginTop="20dp">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_recently_added"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-    </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_popular_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/suggested_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/suggested_events"
+                android:layout_below="@id/rv_popular_now_container"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/rv_suggested_events_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/suggested_events"
+                android:background="#f4f4f4"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_suggested_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Recently_Added"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recently_added"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/rv_suggested_events_container"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Recently_Added"
+                android:background="#f4f4f4"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recently_added"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
+

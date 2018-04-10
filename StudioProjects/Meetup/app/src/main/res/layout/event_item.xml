@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:background="@android:color/darker_gray"
+            android:background="#f4f4f4"
             >
 
             <ImageView
@@ -30,7 +30,7 @@
                 android:id="@+id/event_name"
                 android:text="Event 1"
                 android:layout_below="@id/event_image"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 />
 
@@ -40,7 +40,7 @@
                 android:id="@+id/event_date"
                 android:text="tomorrow"
                 android:layout_below="@id/event_name"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 />
 
         </RelativeLayout>
