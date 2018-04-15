@@ -39,8 +39,11 @@ public class RVAdapterNews extends RecyclerView.Adapter<RVAdapterNews.NewsViewHo
     @Override
     public void onBindViewHolder(NewsViewHolder holder, int i) {
         holder.newsImage.setImageResource(news.get(i).getImageID());
-        holder.newsName.setText(news.get(i).getName());
-        holder.newsDesc.setText(news.get(i).getDescription());
+        holder.newsDate.setText(news.get(i).getDate());
+        holder.newsTime.setText(news.get(i).getTime());
+        holder.newsCategory.setText(news.get(i).getCategory());
+        holder.newsGroup.setText(news.get(i).getGroup());
+        holder.newsContent.setText(news.get(i).getContent());
     }
 
     @Override
@@ -51,15 +54,21 @@ public class RVAdapterNews extends RecyclerView.Adapter<RVAdapterNews.NewsViewHo
     public static class NewsViewHolder extends RecyclerView.ViewHolder {
         CardView cv_news;
         ImageView newsImage;
-        TextView newsName;
-        TextView newsDesc;
+        TextView newsDate;
+        TextView newsTime;
+        TextView newsCategory;
+        TextView newsGroup;
+        TextView newsContent;
 
         NewsViewHolder(View itemView) {
             super(itemView);
             cv_news = (CardView) itemView.findViewById(R.id.cv_news);
             newsImage = (ImageView) itemView.findViewById(R.id.news_image);
-            newsName = (TextView) itemView.findViewById(R.id.news_name);
-            newsDesc = (TextView) itemView.findViewById(R.id.news_description);
+            newsDate = (TextView) itemView.findViewById(R.id.news_date);
+            newsTime = (TextView) itemView.findViewById(R.id.news_time);
+            newsCategory = (TextView) itemView.findViewById(R.id.news_category);
+            newsGroup = (TextView) itemView.findViewById(R.id.news_group);
+            newsContent = (TextView) itemView.findViewById(R.id.news_content);
         }
     }
 

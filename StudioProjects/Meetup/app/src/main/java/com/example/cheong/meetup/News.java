@@ -6,22 +6,40 @@ package com.example.cheong.meetup;
 
 public class News {
 
-    String name;
-    String description;
+    String date;
+    String time;
+    String category;
+    String group;
+    String content;
     int imageID;
 
-    News(String name, String description, int imageID) {
-        this.name = name;
-        this.description = description;
+    News(String date, String time, String category, String group, String content, int imageID) {
+        this.date = date;
+        this.time = time;
+        this.category = category;
+        this.group = group;
+        this.content = content;
         this.imageID = imageID;
     }
 
-    public String getName() {
-        return name;
+    public String getDate() {
+        return date;
     }
 
-    public String getDescription() {
-        return description;
+    public String getTime() {
+        return time;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public String getContent() {
+        return content;
     }
 
     public int getImageID() {
