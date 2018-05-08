@@ -38,12 +38,13 @@ public class RVAdapterNews extends RecyclerView.Adapter<RVAdapterNews.NewsViewHo
 
     @Override
     public void onBindViewHolder(NewsViewHolder holder, int i) {
+        holder.groupIcon.setImageResource(news.get(i).getGroupIcon());
+        holder.groupName.setText(news.get(i).getGroupName());
+        holder.noOfMembers.setText(news.get(i).getNo_of_members());
+        holder.whenPosted.setText(news.get(i).getWhen_posted());
+        holder.newsCaption.setText(news.get(i).getNews_caption());
+        holder.newsTeaser.setText(news.get(i).getNews_teaser());
         holder.newsImage.setImageResource(news.get(i).getImageID());
-        holder.newsDate.setText(news.get(i).getDate());
-        holder.newsTime.setText(news.get(i).getTime());
-        holder.newsCategory.setText(news.get(i).getCategory());
-        holder.newsGroup.setText(news.get(i).getGroup());
-        holder.newsContent.setText(news.get(i).getContent());
     }
 
     @Override
@@ -53,22 +54,24 @@ public class RVAdapterNews extends RecyclerView.Adapter<RVAdapterNews.NewsViewHo
 
     public static class NewsViewHolder extends RecyclerView.ViewHolder {
         CardView cv_news;
+        ImageView groupIcon;
+        TextView groupName;
+        TextView noOfMembers;
+        TextView whenPosted;
+        TextView newsCaption;
+        TextView newsTeaser;
         ImageView newsImage;
-        TextView newsDate;
-        TextView newsTime;
-        TextView newsCategory;
-        TextView newsGroup;
-        TextView newsContent;
 
         NewsViewHolder(View itemView) {
             super(itemView);
             cv_news = (CardView) itemView.findViewById(R.id.cv_news);
+            groupIcon = (ImageView) itemView.findViewById(R.id.group_icon);
+            groupName = (TextView) itemView.findViewById(R.id.group_name);
+            noOfMembers = (TextView) itemView.findViewById(R.id.no_of_group_members);
+            whenPosted = (TextView) itemView.findViewById(R.id.when_posted);
+            newsCaption = (TextView) itemView.findViewById(R.id.news_caption);
+            newsTeaser = (TextView) itemView.findViewById(R.id.news_teaser);
             newsImage = (ImageView) itemView.findViewById(R.id.news_image);
-            newsDate = (TextView) itemView.findViewById(R.id.news_date);
-            newsTime = (TextView) itemView.findViewById(R.id.news_time);
-            newsCategory = (TextView) itemView.findViewById(R.id.news_category);
-            newsGroup = (TextView) itemView.findViewById(R.id.news_group);
-            newsContent = (TextView) itemView.findViewById(R.id.news_content);
         }
     }
 

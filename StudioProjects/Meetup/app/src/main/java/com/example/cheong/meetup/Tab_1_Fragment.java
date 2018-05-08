@@ -46,8 +46,8 @@ public class Tab_1_Fragment extends android.support.v4.app.Fragment {
         // RV for Newsfeed
 
         ArrayList<News> newsfeed = new ArrayList<>();
-        newsfeed.add(new News("3月12日", "14:39", "类型", "群名", "________内容________________________________________________", R.drawable.empty_thumbnail_news));
-        newsfeed.add(new News("3月13日", "08:43", "类型", "群名", "________内容________________________________________________", R.drawable.empty_thumbnail_news));
+        newsfeed.add(new News(R.drawable.round_thumbnail, "群名", "5个队员", "1h", "项目名称", "（内容描述）", R.drawable.empty_thumbnail_news));
+        newsfeed.add(new News(R.drawable.round_thumbnail, "群名", "5个队员", "1h", "项目名称", "（内容描述）", R.drawable.empty_thumbnail_news));
 
         /*
         https://iteritory.com/android-recyclerview-horizontal-list-tutorial/
@@ -60,8 +60,8 @@ public class Tab_1_Fragment extends android.support.v4.app.Fragment {
         RVAdapterNews adapter_newsfeed = new RVAdapterNews(newsfeed, getContext());
         rv_newsfeed.setAdapter(adapter_newsfeed);
 
-        newsfeed.add(new News("3月13日", "15:33", "类型", "群名", "________内容________________________________________________", R.drawable.empty_thumbnail_news));
-        newsfeed.add(new News("3月15日", "19:18", "类型", "群名", "________内容________________________________________________", R.drawable.empty_thumbnail_news));
+        newsfeed.add(new News(R.drawable.round_thumbnail, "群名", "5个队员", "1h", "项目名称", "（内容描述）", R.drawable.empty_thumbnail_news));
+        newsfeed.add(new News(R.drawable.round_thumbnail, "群名", "5个队员", "1h", "项目名称", "（内容描述）", R.drawable.empty_thumbnail_news));
 
         adapter_newsfeed.notifyDataSetChanged();
 

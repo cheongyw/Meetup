@@ -3,69 +3,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/create_new_event"
-        style="?android:textAppearanceSmall"
+    <ImageButton
+        android:id="@+id/create_event"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/continue_draft"
-        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="80dp"
+        android:src="@drawable/round_thumbnail"
         />
 
-    <ImageView
-        android:id="@+id/empty_image"
+    <ImageButton
+        android:id="@+id/manage_event"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/create_new_event"
-        android:src="@drawable/empty_thumbnail" />
-
-    <TextView
-        android:id="@+id/new_event_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/new_event_name"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/empty_image"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/round_thumbnail"
         />
 
-    <TextView
-        android:id="@+id/new_event_date"
+    <ImageButton
+        android:id="@+id/create_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_event_date"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/new_event_name"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp"
+        android:src="@drawable/round_thumbnail"
         />
 
-    <TextView
-        android:id="@+id/new_event_description"
+    <ImageButton
+        android:id="@+id/manage_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_event_description"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/new_event_date"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        />
-
-    <Button
-        android:id="@+id/continue_draft"
-        style="?android:textAppearanceSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/new_event_description"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/create_new_event"
-        android:textStyle="bold"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/round_thumbnail"
         />
 
 </RelativeLayout>

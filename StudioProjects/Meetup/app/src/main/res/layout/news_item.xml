@@ -14,68 +14,111 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#f4f4f4"
-            android:paddingBottom="20dp"
+            android:paddingBottom="40dp"
             >
+
+            <ImageView
+                android:id="@+id/group_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/round_thumbnail" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/news_date"
-                android:text="News Date"
+                android:id="@+id/group_name"
+                android:text="Group Name"
                 android:textSize="15sp"
                 android:textStyle="bold"
+                android:layout_toRightOf="@id/group_icon"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_of_group_members"
+                android:text="No. of members"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/group_icon"
+                android:layout_below="@id/group_name"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/when_posted"
+                android:text="When Posted"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/group_icon"
+                android:layout_below="@id/no_of_group_members"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_caption"
+                android:text="Event Caption/Name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_below="@id/group_icon"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_teaser"
+                android:text="(Teaser/Summary)"
+                android:textSize="15sp"
+                android:layout_below="@id/news_caption"
+                android:textAlignment="center"
                 />
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/news_image"
-                android:layout_below="@id/news_date"
-                android:src="@drawable/empty_thumbnail_news"
-                android:layout_alignStart="@id/news_date"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/news_time"
-                android:text="News Time"
-                android:layout_above="@id/news_image"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:layout_alignEnd="@id/news_image"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/news_category"
-                android:text="News Category"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:layout_alignParentRight="true"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/news_group"
-                android:text="Group Name"
-                android:textSize="15sp"
-                android:layout_below="@id/news_category"
-                android:layout_toRightOf="@id/news_image"
-                android:layout_marginLeft="50dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/news_content"
-                android:text="Content"
-                android:textSize="12sp"
-                android:layout_below="@id/news_group"
-                android:layout_toRightOf="@id/news_image"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_below="@id/news_teaser"
+                android:src="@drawable/empty_thumbnail_news"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_of_likes_and_comments"
+                android:text="5 Likes, 5 Comments"
+                android:textSize="15sp"
+                android:layout_below="@id/news_image"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/like"
+                android:text="Like"
+                android:textSize="15sp"
+                android:layout_below="@id/no_of_likes_and_comments"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="120dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment"
+                android:text="Comment"
+                android:textSize="15sp"
+                android:layout_below="@id/no_of_likes_and_comments"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="200dp"
                 />
 
         </RelativeLayout>

@@ -26,7 +26,7 @@ public class Tab_3_Fragment extends android.support.v4.app.Fragment {
 
         View view = inflater.inflate(R.layout.tab_3, container, false);
 
-        Button create = (Button) view.findViewById(R.id.create_new_event);
+        /*Button create = (Button) view.findViewById(R.id.create_new_event);
         create.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -46,7 +46,7 @@ public class Tab_3_Fragment extends android.support.v4.app.Fragment {
                 Intent intent = new Intent(getActivity(),LoginActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         return view;
     }
