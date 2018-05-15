@@ -42,5 +42,6 @@
     <string name="my_groups">"羽球小队"</string>
     <string name="gender">"其他"</string>
     <string name="calendar">"我的日历"</string>
+    <string name="title_activity_sub">SubActivity</string>
 
 </resources>

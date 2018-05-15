@@ -1,8 +1,10 @@
 package com.example.cheong.meetup;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,13 +22,19 @@ public class Tab_5_Fragment extends android.support.v4.app.Fragment {
 
         View view = inflater.inflate(R.layout.tab_5, container, false);
 
+/*
+        https://stackoverflow.com/questions/18711433/button-listener-for-button-in-fragment-in-android
+*/
         Button button = (Button) view.findViewById(R.id.email_sign_in_button);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(getActivity(),LoginActivity.class);
+                /*FragmentTransaction fr = getFragmentManager().beginTransaction();
+                fr.replace(R.id.container, new Tab_2_Fragment());
+                fr.commit();*/
+                Intent intent = new Intent(getActivity(),SubActivity.class);
                 startActivity(intent);
             }
         });
