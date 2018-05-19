@@ -1,6 +1,7 @@
 package com.example.cheong.meetup;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.CardView;
@@ -8,6 +9,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,7 +22,6 @@ import java.util.List;
  */
 
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EventViewHolder> {
-
 
     private List<Event> events;
     Context context;
@@ -52,14 +54,14 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EventViewHolder> {
 
     public static class EventViewHolder extends RecyclerView.ViewHolder {
         CardView cv;
-        ImageView eventImage;
+        ImageButton eventImage;
         TextView eventName;
         TextView eventDate;
 
         EventViewHolder(View itemView) {
             super(itemView);
             cv = (CardView) itemView.findViewById(R.id.cv);
-            eventImage = (ImageView) itemView.findViewById(R.id.event_image);
+            eventImage = (ImageButton) itemView.findViewById(R.id.event_image);
             eventName = (TextView) itemView.findViewById(R.id.event_name);
             eventDate = (TextView) itemView.findViewById(R.id.event_date);
         }

@@ -28,9 +28,8 @@ public class Tab_2_Fragment extends android.support.v4.app.Fragment {
         //RV for Popular Now
 
         ArrayList<Event> popular_now = new ArrayList<>();
-        popular_now.add(new Event("项目一", "项目描述", R.drawable.empty_thumbnail));
-        popular_now.add(new Event("项目二", "项目描述", R.drawable.empty_thumbnail));
-        popular_now.add(new Event("项目三", "项目描述", R.drawable.empty_thumbnail));
+        popular_now.add(new Event("进化·重新定义办公", "天师人工智能小组", R.drawable.group_2_event));
+        popular_now.add(new Event("五一周末北京周边游-古北水镇", "北大周末旅游小组", R.drawable.group_3_event));
 
         RecyclerView rv_popular_now = (RecyclerView)view.findViewById(R.id.rv_popular_now);
         LinearLayoutManager llm_popular_now = new LinearLayoutManager(this.getActivity(), LinearLayoutManager.HORIZONTAL, false);
@@ -39,17 +38,12 @@ public class Tab_2_Fragment extends android.support.v4.app.Fragment {
         RVAdapter adapter_popular_now = new RVAdapter(popular_now, getContext());
         rv_popular_now.setAdapter(adapter_popular_now);
 
-        popular_now.add(new Event("项目四", "项目描述", R.drawable.empty_thumbnail));
-        popular_now.add(new Event("项目五", "项目描述", R.drawable.empty_thumbnail));
-        popular_now.add(new Event("项目六", "项目描述", R.drawable.empty_thumbnail));
-        adapter_popular_now.notifyDataSetChanged();
-
         //RV for Suggested Events
 
         ArrayList<Event> suggested_events = new ArrayList<>();
-        suggested_events.add(new Event("项目一", "今天", R.drawable.empty_thumbnail));
-        suggested_events.add(new Event("项目二", "今天", R.drawable.empty_thumbnail));
-        suggested_events.add(new Event("项目三", "明天", R.drawable.empty_thumbnail));
+        suggested_events.add(new Event("第四期羽毛球集会", "3月10日", R.drawable.group_1_event));
+        suggested_events.add(new Event("第五期羽毛球集会", "3月17日", R.drawable.group_1_event));
+        suggested_events.add(new Event("第六期羽毛球集会", "3月24日", R.drawable.group_1_event));
 
         RecyclerView rv_suggested_events = (RecyclerView)view.findViewById(R.id.rv_suggested_events);
         LinearLayoutManager llm_suggested_events = new LinearLayoutManager(this.getActivity(), LinearLayoutManager.HORIZONTAL, false);
@@ -58,17 +52,10 @@ public class Tab_2_Fragment extends android.support.v4.app.Fragment {
         RVAdapter adapter_suggested_events = new RVAdapter(suggested_events, getContext());
         rv_suggested_events.setAdapter(adapter_suggested_events);
 
-        suggested_events.add(new Event("项目四", "明天", R.drawable.empty_thumbnail));
-        suggested_events.add(new Event("项目五", "后天", R.drawable.empty_thumbnail));
-        suggested_events.add(new Event("项目六", "后天", R.drawable.empty_thumbnail));
-        adapter_suggested_events.notifyDataSetChanged();
-
         //RV for Recently Added
 
         ArrayList<Event> recently_added = new ArrayList<>();
-        recently_added.add(new Event("项目一", "项目描述", R.drawable.empty_thumbnail));
-        recently_added.add(new Event("项目二", "项目描述", R.drawable.empty_thumbnail));
-        recently_added.add(new Event("项目三", "项目描述", R.drawable.empty_thumbnail));
+        recently_added.add(new Event("进化·重新定义办公", "天师人工智能小组", R.drawable.group_2_event));
 
         RecyclerView rv_recently_added = (RecyclerView)view.findViewById(R.id.rv_recently_added);
         LinearLayoutManager llm_recently_added = new LinearLayoutManager(this.getActivity(), LinearLayoutManager.HORIZONTAL, false);
@@ -76,12 +63,6 @@ public class Tab_2_Fragment extends android.support.v4.app.Fragment {
 
         RVAdapter adapter_recently_added = new RVAdapter(recently_added, getContext());
         rv_recently_added.setAdapter(adapter_recently_added);
-
-        recently_added.add(new Event("项目四", "项目描述", R.drawable.empty_thumbnail));
-        recently_added.add(new Event("项目五", "项目描述", R.drawable.empty_thumbnail));
-        recently_added.add(new Event("项目六", "项目描述", R.drawable.empty_thumbnail));
-
-        adapter_recently_added.notifyDataSetChanged();
 
         return view;
     }

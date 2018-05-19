@@ -23,7 +23,7 @@ public class Tab_5_Fragment extends android.support.v4.app.Fragment {
         View view = inflater.inflate(R.layout.tab_5, container, false);
 
 /*
-        https://stackoverflow.com/questions/18711433/button-listener-for-button-in-fragment-in-android
+        https://www.youtube.com/watch?v=TY-2Cx4IW9A
 */
         Button button = (Button) view.findViewById(R.id.email_sign_in_button);
         button.setOnClickListener(new View.OnClickListener()
