@@ -30,6 +30,14 @@
         <activity
             android:name=".SubActivity"
             android:label="@string/title_activity_sub"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewGroupActivity"
+            android:label="LeMAO"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewEventActivity"
+            android:label="LeMAO"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

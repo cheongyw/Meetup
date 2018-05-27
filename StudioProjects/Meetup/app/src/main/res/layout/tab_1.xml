@@ -36,74 +36,71 @@
 
     -->
 
-    <TextView
-        android:id="@+id/upcoming_events"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/upcoming_events"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"
-        />
-
-    <LinearLayout
-        android:id="@+id/rv_upcoming_events_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/upcoming_events"
-        android:background="#f4f4f4"
-        android:layout_marginTop="20dp">
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_upcoming_events"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-    </LinearLayout>
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@id/rv_upcoming_events_container"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/black"/>
-
-    <TextView
-        android:id="@+id/newsfeed"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/newsfeed"
-        android:layout_below="@id/divider"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"
-        />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/newsfeed"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/newsfeed"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
-            android:background="#f4f4f4"
             android:orientation="vertical"
             >
 
+            <TextView
+                android:id="@+id/upcoming_events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upcoming_events"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/rv_upcoming_events_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upcoming_events"
+                android:background="#f4f4f4"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_upcoming_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rv_upcoming_events_container"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/newsfeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/newsfeed"
+                android:layout_below="@id/divider"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_newsfeed"
+                android:layout_below="@id/newsfeed"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 />
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </ScrollView>
 

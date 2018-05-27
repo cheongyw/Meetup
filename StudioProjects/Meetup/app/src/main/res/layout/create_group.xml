@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.cheong.meetup.NewEventActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -12,7 +10,7 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar_create_event"
+            android:id="@+id/toolbar_create_group"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
@@ -29,10 +27,10 @@
         android:src="@drawable/empty_thumbnail" />
 
     <TextView
-        android:id="@+id/new_event_name"
+        android:id="@+id/new_group_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_event_name"
+        android:text="小组名称：__________________"
         android:layout_marginTop="20dp"
         android:layout_below="@id/empty_image"
         android:textStyle="bold"
@@ -40,23 +38,34 @@
         />
 
     <TextView
-        android:id="@+id/new_event_date"
+        android:id="@+id/new_group_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_event_date"
+        android:text="小组类型：__________________"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/new_event_name"
+        android:layout_below="@id/new_group_name"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         />
 
     <TextView
-        android:id="@+id/new_event_description"
+        android:id="@+id/new_group_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_event_description"
+        android:text="小组地区：__________________"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/new_event_date"
+        android:layout_below="@id/new_group_category"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/new_group_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简单描述：__________________"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/new_group_location"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         />
@@ -66,10 +75,11 @@
         style="?android:textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/new_event_description"
+        android:layout_below="@id/new_group_description"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:text="@string/create_new_event"
-        android:textStyle="bold"></Button>
+        android:text="创建新小组"
+        android:textStyle="bold"
+        />
 
 </RelativeLayout>

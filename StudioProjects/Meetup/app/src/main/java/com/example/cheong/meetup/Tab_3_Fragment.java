@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
@@ -26,27 +27,27 @@ public class Tab_3_Fragment extends android.support.v4.app.Fragment {
 
         View view = inflater.inflate(R.layout.tab_3, container, false);
 
-        /*Button create = (Button) view.findViewById(R.id.create_new_event);
-        create.setOnClickListener(new View.OnClickListener()
+        ImageButton create_event = (ImageButton) view.findViewById(R.id.create_event);
+        create_event.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(getActivity(),LoginActivity.class);
+                Intent intent = new Intent(getActivity(),NewEventActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button cont = (Button) view.findViewById(R.id.continue_draft);
-        cont.setOnClickListener(new View.OnClickListener()
+        ImageButton create_group = (ImageButton) view.findViewById(R.id.create_group);
+        create_group.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(getActivity(),LoginActivity.class);
+                Intent intent = new Intent(getActivity(),NewGroupActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
         return view;
     }

@@ -43,5 +43,7 @@
     <string name="gender">"其他"</string>
     <string name="calendar">"我的日历"</string>
     <string name="title_activity_sub">SubActivity</string>
+    <string name="title_activity_new_group">NewGroupActivity</string>
+    <string name="title_activity_new_event">NewEventActivity</string>
 
 </resources>

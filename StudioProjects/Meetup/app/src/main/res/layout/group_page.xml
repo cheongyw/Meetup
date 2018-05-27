@@ -5,130 +5,127 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
-    <ImageView
-        android:id="@+id/group_cover_GP"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/empty_thumbnail" />
-
-    <ImageView
-        android:id="@+id/group_icon_GP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/group_cover_GP"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/round_thumbnail" />
-
-    <TextView
-        android:id="@+id/group_name_GP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Group Name"
-        android:layout_below="@id/group_icon_GP"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/group_category_GP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Category  .  Country"
-        android:layout_below="@id/group_name_GP"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/group_no_of_members_GP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No. of members"
-        android:layout_below="@id/group_category_GP"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:id="@+id/follow_GP"
-        style="?android:textAppearanceSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/group_no_of_members_GP"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:text="Follow"
-        android:textStyle="bold"
-        />
-
-    <Button
-        android:id="@+id/past_events_GP"
-        style="?android:textAppearanceSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/group_no_of_members_GP"
-        android:layout_toRightOf="@id/follow_GP"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:text="Past Events"
-        android:textStyle="bold"
-        />
-
-    <TextView
-        android:id="@+id/description_text_GP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="About Us"
-        android:layout_below="@id/follow_GP"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/description_GP"
-        android:text="(Summary)"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/description_text_GP"
-        />
-
-    <TextView
-        android:id="@+id/upcoming_events_GP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Upcoming Events"
-        android:layout_below="@id/description_GP"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"/>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/upcoming_events_GP"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/upcoming_events_GP"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
             android:background="#f4f4f4"
             android:orientation="vertical"
             >
+
+            <ImageView
+                android:id="@+id/group_cover_GP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group_2_cover" />
+
+            <ImageView
+                android:id="@+id/group_icon_GP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group_cover_GP"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/group_2_dp" />
+
+            <TextView
+                android:id="@+id/group_name_GP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天师人工智能小组"
+                android:layout_below="@id/group_icon_GP"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/group_category_GP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT互联网-人工智能  .  北京"
+                android:layout_below="@id/group_name_GP"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/group_no_of_members_GP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200名成员"
+                android:layout_below="@id/group_category_GP"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/follow_GP"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_no_of_members_GP"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="注意"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/past_events_GP"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_no_of_members_GP"
+                android:layout_toRightOf="@id/follow_GP"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="历史项目"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/description_text_GP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于我们"
+                android:layout_below="@id/follow_GP"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description_GP"
+                android:text="我们是北京喜爱人工智能的群体，那些对人工智能感兴趣的或者是这方面的老将都欢迎加入！"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/description_text_GP"
+                />
+
+            <TextView
+                android:id="@+id/upcoming_events_GP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="将来的项目"
+                android:layout_below="@id/description_GP"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"/>
 
             <TextView
                 android:id="@+id/event_name_GP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Event Name"
+                android:layout_below="@id/upcoming_events_GP"
+                android:text="进化·重新定义办公"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
                 />
@@ -140,13 +137,13 @@
                 android:layout_marginTop="20dp"
                 android:layout_below="@+id/event_name_GP"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/empty_thumbnail" />
+                android:src="@drawable/group_2_event" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/event_location_GP"
-                android:text="Location"
+                android:text="北京"
                 android:textSize="15sp"
                 android:layout_below="@id/event_picture_GP"
                 android:layout_marginTop="20dp"
@@ -157,7 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/sign_up_for_event_GP"
-                android:text="Sign Up!"
+                android:text="报名!"
                 android:textSize="15sp"
                 android:layout_below="@id/event_picture_GP"
                 android:layout_marginTop="20dp"
@@ -169,7 +166,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/event_time"
-                android:text="Time"
+                android:text="3月5日"
                 android:textSize="15sp"
                 android:layout_below="@id/event_picture_GP"
                 android:layout_marginRight="20dp"
@@ -183,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:id="@+id/event_summary"
-                android:text="(Summary)"
+                android:text="以人为核心的办公场景变革即将来领临。我们与合作伙伴一起，诚恳邀请您参加我们的解决方案发布会！"
                 android:textSize="15sp"
                 android:layout_marginTop="20dp"
                 android:layout_below="@id/sign_up_for_event"

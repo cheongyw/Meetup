@@ -5,99 +5,7 @@ android:layout_height="match_parent"
 xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
-    <ImageView
-        android:id="@+id/organiser_dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/round_thumbnail" />
-
-    <TextView
-        android:id="@+id/organiser_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Organiser Name"
-        android:layout_toRightOf="@id/organiser_dp"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"
-        />
-
-
-    <View
-        android:id="@+id/divider1"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@id/organiser_dp"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/black"/>
-
-    <TextView
-        android:id="@+id/event_name_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Event Name"
-        android:layout_below="@id/divider1"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"
-        />
-
-    <ImageView
-        android:id="@+id/event_picture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/event_name_1"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/empty_thumbnail" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@id/event_picture"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/black"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/event_location"
-        android:text="Location"
-        android:textSize="15sp"
-        android:layout_below="@id/divider2"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:layout_marginLeft="20dp"        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/sign_up_for_event"
-        android:text="Sign Up!"
-        android:textSize="15sp"
-        android:layout_below="@id/divider2"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/event_time"
-        android:text="Time"
-        android:textSize="15sp"
-        android:layout_below="@id/divider2"
-        android:layout_marginRight="20dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-         />
-
-    <TextView
+    <!--<TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -118,34 +26,124 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:textStyle="bold"
-        />
+        />-->
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/event_description_text"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/event_description_text"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
             android:background="#f4f4f4"
             android:orientation="vertical"
             >
 
+            <ImageView
+                android:id="@+id/organiser_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/group_2_dp" />
+
+            <TextView
+                android:id="@+id/organiser_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天师人工智能小组"
+                android:layout_toRightOf="@id/organiser_dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/organiser_dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/event_name_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="进化·重新定义办公"
+                android:layout_below="@id/divider1"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/event_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/event_name_1"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/group_2_event" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/event_picture"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_location"
+                android:text="北京"
+                android:textSize="15sp"
+                android:layout_below="@id/divider2"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"        />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign_up_for_event"
+                android:text="报名!"
+                android:textSize="15sp"
+                android:layout_below="@id/divider2"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_time"
+                android:text="3月5日"
+                android:textSize="15sp"
+                android:layout_below="@id/divider2"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_below="@id/sign_up_for_event"
+                android:layout_marginTop="20dp"
                 android:id="@+id/event_description"
-                android:text="(Detailed description)"
+                android:text="以人为核心的办公场景变革即将来领临。我们与合作伙伴一起，诚恳邀请您参加我们的解决方案发布会！"
                 android:textSize="15sp"
                 />
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </ScrollView>
 
