@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
                 case 2:
                     return "+";
                 case 3:
-                    return "搜索";
+                    return "通知";
                 case 4:
                     return "我的";
             }

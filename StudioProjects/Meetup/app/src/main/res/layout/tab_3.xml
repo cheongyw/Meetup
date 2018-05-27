@@ -8,8 +8,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="80dp"
-        android:src="@drawable/round_thumbnail"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/create_event_button"
+        android:padding="0dp"
+        android:background="@null"
         />
 
     <ImageButton
@@ -18,7 +20,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginLeft="200dp"
-        android:src="@drawable/round_thumbnail"
+        android:padding="0dp"
+        android:src="@drawable/manage_event_button"
+        android:background="@null"
         />
 
     <ImageButton
@@ -26,8 +30,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
-        android:layout_marginLeft="80dp"
-        android:src="@drawable/round_thumbnail"
+        android:layout_marginLeft="50dp"
+        android:padding="0dp"
+        android:src="@drawable/create_group_button"
+        android:background="@null"
         />
 
     <ImageButton
@@ -36,7 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
         android:layout_marginLeft="200dp"
-        android:src="@drawable/round_thumbnail"
+        android:padding="0dp"
+        android:src="@drawable/manage_group_button"
+        android:background="@null"
         />
 
 </RelativeLayout>

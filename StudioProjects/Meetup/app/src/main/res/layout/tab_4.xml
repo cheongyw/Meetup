@@ -6,7 +6,57 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
-    <ImageView
+    <TextView
+        android:id="@+id/notif_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="通知（一）"
+        android:background="#c7e9ed"
+        />
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/notif_1"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/notif_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_1"
+        android:padding="20dp"
+        android:text="通知（二）"
+        android:background="#c7e9ed"
+        />
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/notif_2"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/notif_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_2"
+        android:padding="20dp"
+        android:text="通知（三）"
+        android:background="#c7e9ed"
+        />
+
+    <View
+        android:id="@+id/divider_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/notif_3"
+        android:background="@android:color/darker_gray"/>
+
+    <!--<ImageView
         android:id="@+id/search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,9 +79,9 @@
             android:orientation="vertical"
             >
 
-<!--
+&lt;!&ndash;
             first category
--->
+&ndash;&gt;
 
             <TextView
                 android:id="@+id/categories_1"
@@ -171,9 +221,9 @@
                 android:layout_marginLeft="83dp"
                 />
 
-<!--
+&lt;!&ndash;
             second category
--->
+&ndash;&gt;
             <TextView
                 android:id="@+id/categories_2"
                 android:layout_width="match_parent"
@@ -315,7 +365,7 @@
 
         </RelativeLayout>
 
-    </ScrollView>
+    </ScrollView>-->
 
 </RelativeLayout>
 

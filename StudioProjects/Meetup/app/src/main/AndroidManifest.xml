@@ -38,6 +38,14 @@
         <activity
             android:name=".NewEventActivity"
             android:label="LeMAO"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventPageActivity"
+            android:label="LeMAO"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GroupPageActivity"
+            android:label="LeMAO"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

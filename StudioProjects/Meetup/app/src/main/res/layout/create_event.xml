@@ -40,12 +40,23 @@
         />
 
     <TextView
+        android:id="@+id/new_event_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="项目地点：__________________"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/new_event_name"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
         android:id="@+id/new_event_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/new_event_date"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/new_event_name"
+        android:layout_below="@id/new_event_location"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         />
